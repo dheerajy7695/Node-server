@@ -5,9 +5,10 @@
   "license": "ISC",
   "author": "dheeraj",
   "type": "commonjs",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -20,8 +21,5 @@
     "mongoose": "^8.10.0",
     "path": "^0.12.7",
     "winston": "^3.17.0"
-  },
-  "engines": {
-    "node": "22.x"
   }
 }
