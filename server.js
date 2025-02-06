@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
     res.send('This is from nodejs server');
 });
 
+app.get('/get-data', (req, res) => {
+    res.json({ name: "dheeraj", id: 1001 })
+});
+
 app.listen(PORT, () => {
     logger.info(`server is running on port -${PORT}`);
 });
