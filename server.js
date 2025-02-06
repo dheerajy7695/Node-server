@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-PORT = process.env.PORT || 5000;
+PORT = process.env.PORT;
 
 app.get('/', (req, res) => {
     res.send('This is from nodejs server');
